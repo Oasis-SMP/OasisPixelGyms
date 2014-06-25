@@ -1,0 +1,21 @@
+######################################################
+#                                                    #
+#  This is the main config file for OasisPixelGyms   #
+#                                                    #
+######################################################
+
+## toggle-able settings
+
+## Do you want a broadcast sent out when a regular (non-vanished) gym leader 
+## logs into the server? Default is true.
+notify-on-gymleader-join: true
+
+## Do you want a broadcast sent out when a staff or vanished gym leader
+## logs into the server? Default is false. 
+notify-on-staff-join: false
+
+######### Experimental Items ########
+
+## Send broadast upon staff (who is gymleader) doing /vanish fakejoin
+## There is no default. Comment this line out if bugs occur.
+##notify-on-staff-fakejoin: false

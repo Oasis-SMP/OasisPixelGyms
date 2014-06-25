@@ -17,6 +17,8 @@ import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
+//import net.charter.orion_pax.OasisExtras.MyConfigFile;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -36,6 +38,7 @@ public class OasisPixelGyms extends JavaPlugin{
 
 	public ConsoleCommandSender console;
 	public ConfigFile gymConfigFile;
+//	public MyConfigFile maps;
 //	public RemoteConsoleCommandSender rcon;
 //	public List<Chunk> eList = new ArrayList<Chunk>();
 //	public List<Item> aura = new ArrayList<Item>();
@@ -67,8 +70,8 @@ public class OasisPixelGyms extends JavaPlugin{
 */
 	public void onEnable() {
 
-	//	createconfig();
-	//	gyms = new MyConfigFile(this,"gyms.yml");
+		createconfig();
+		gymConfigFile = new ConfigFile(this,"gyms.yml");
 	//	if(ImgUtility.CreateImageDir(this)){
 		//	ChargerMap();
 //		}
@@ -145,7 +148,7 @@ public class OasisPixelGyms extends JavaPlugin{
 	}
 */
 	
-/*
+
 	public void createconfig(){
 		File file = new File(getDataFolder(), "config.yml");
 		if(file.exists()){
@@ -189,5 +192,5 @@ public class OasisPixelGyms extends JavaPlugin{
 				e.printStackTrace();
 			}
 		}
-	} */
+	} 
 }

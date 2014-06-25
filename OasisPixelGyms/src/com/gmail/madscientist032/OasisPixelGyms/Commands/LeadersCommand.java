@@ -22,7 +22,7 @@ public class LeadersCommand implements CommandExecutor{
 	/* 	sender.sendMessage(ChatColor.translateAlternateColorCodes(
 				'&', plugin.acprefix) + "[GYM LEADERS ONLINE]"); */
 	//plugin.getServer().broadcastMessage(ChatColor.GOLD + sender.getName() + " is " + ChatColor.RED + "DISABLED!") 
-		sender.sendMessage(ChatColor.GOLD + " [GYM LEADERS ONLINE]" );
+		sender.sendMessage(ChatColor.GOLD + "[GYM LEADERS ONLINE]" );
 				
 		Player[] onlinePlayers = Bukkit.getServer()
 				.getOnlinePlayers();
