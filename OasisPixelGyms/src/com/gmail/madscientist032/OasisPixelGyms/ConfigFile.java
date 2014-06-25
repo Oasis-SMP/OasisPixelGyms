@@ -15,6 +15,7 @@ public class ConfigFile {
 	private File configFile;
 	private FileConfiguration fileConfiguration;
 
+	@SuppressWarnings("deprecation")
 	public ConfigFile(OasisPixelGyms plugin, String fileName) {
 		if (plugin == null)
 			throw new IllegalArgumentException("plugin cannot be null");
