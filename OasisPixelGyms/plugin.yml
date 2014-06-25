@@ -1,6 +1,6 @@
 name: OasisPixelGyms
 main: com.gmail.madscientist032.OasisPixelGyms.OasisPixelGyms
-version: OasisPixelGyms Alpha Build 062514
+version: Alpha Build 062514 Rev 11
 description: Oasis Pixelmon Gym Stuff
 author: madscientist032
 commands:
@@ -8,16 +8,16 @@ commands:
   leaders:
     description: Lists online Gym Leaders!
     usage: "Usage: /<command>"
-    aliases: [leadersonline]
-    permission: OasisPixelGym.leaders.list
+    aliases: [listleaders]
+    permission: oasispixelgyms.leaders.list
     permission-message: You don't have permissions for <permission>
 
 permissions:
-    OasisPixelGym.leaders.list:
+    oasispixelgyms.leaders.list:
         description: Shows a list online Gym Leaders!
 
-    OasisPixelGym.gym.leader:
+    oasispixelgyms.gym.leader:
         description: Grants Gym leader access!
 
-    OasisPixelGym.gym.coleader:
+    oasispixelgyms.gym.coleader:
         description: Grants Gym Co-leader access!

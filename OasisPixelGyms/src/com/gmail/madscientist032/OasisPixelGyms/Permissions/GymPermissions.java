@@ -28,7 +28,7 @@ public class GymPermissions  {
 }	 
 /*	    
 	    public boolean mayCreate() {
-	        return hasPluginPermission("OasisPixelGyms.create");
+	        return hasPluginPermission("oasispixelgyms.create");
 	    }
 	    
 	    public boolean mayRedefine(ProtectedRegion region) {
@@ -44,7 +44,7 @@ public class GymPermissions  {
 	    }
 	    
 	    public boolean mayList() {
-	        return hasPluginPermission("OasisPixelGyms.list");
+	        return hasPluginPermission("oasispixelgyms.list");
 	    }
 	    
 	    public boolean mayList(String targetPlayer) {

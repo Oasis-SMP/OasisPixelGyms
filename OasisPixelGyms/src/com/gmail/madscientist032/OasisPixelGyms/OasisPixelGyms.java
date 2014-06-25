@@ -25,16 +25,18 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.command.RemoteConsoleCommandSender;
+import org.bukkit.event.*;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.event.player.PlayerJoinEvent;
 //import org.bukkit.plugin.RegisteredServiceProvider;
 //import org.bukkit.scheduler.BukkitRunnable;
 //import org.bukkit.scheduler.BukkitTask;
 
 import com.gmail.madscientist032.OasisPixelGyms.Commands.*;
 
-public class OasisPixelGyms extends JavaPlugin{
+public class OasisPixelGyms extends JavaPlugin implements Listener {
 
 	public ConsoleCommandSender console;
 	public ConfigFile gymConfigFile;
@@ -48,7 +50,7 @@ public class OasisPixelGyms extends JavaPlugin{
 //	public OasisPlayer[] myplayers;
 //	public boolean closed = false;
 //	public LogHandler myloghandler = new LogHandler(this);
-//	public Logger g;
+	public Logger g;
 //	private HashMap<String, ArrayList<ItemStack>> cache = new HashMap<String, ArrayList<ItemStack>>();
 //	public OasisEntityPlayerManager OEPManager = new OasisEntityPlayerManager(this);
 	//public SLAPI slapi;
@@ -69,7 +71,7 @@ public class OasisPixelGyms extends JavaPlugin{
 	};
 */
 	public void onEnable() {
-
+		this.getServer().getPluginManager().registerEvents(this, this);
 		createconfig();
 		gymConfigFile = new ConfigFile(this,"gyms.yml");
 	//	if(ImgUtility.CreateImageDir(this)){
