@@ -35,7 +35,7 @@ import com.gmail.madscientist032.OasisPixelGyms.Commands.*;
 public class OasisPixelGyms extends JavaPlugin{
 
 	public ConsoleCommandSender console;
-//	public ConfigFile gymConfigFile;
+	public ConfigFile gymConfigFile;
 //	public RemoteConsoleCommandSender rcon;
 //	public List<Chunk> eList = new ArrayList<Chunk>();
 //	public List<Item> aura = new ArrayList<Item>();
@@ -67,15 +67,16 @@ public class OasisPixelGyms extends JavaPlugin{
 */
 	public void onEnable() {
 
-//		createconfig();
-//		gyms = new MyConfigFile(this,"gyms.yml");
+	//	createconfig();
+	//	gyms = new MyConfigFile(this,"gyms.yml");
 	//	if(ImgUtility.CreateImageDir(this)){
 		//	ChargerMap();
 //		}
 
-//		getCommand("leaders").setExecutor(new leadersCommand(this));
+		getCommand("leaders").setExecutor(new LeadersCommand(this));
 /*		getCommand("disableme").setExecutor(new DisableMeCommand(this));
-		getCommand("givecoupon").setExecutor(new GiveCouponCommand(this));
+ * 		getCommand("setbadge").setExecutor(new SetBadgeCommand(this));
+		getCommand("givebadge").setExecutor(new GiveCouponCommand(this));
 		getCommand("friends").setExecutor(new FriendsCommand(this));
 		getCommand("notify").setExecutor(new NotifyCommand(this));
 */

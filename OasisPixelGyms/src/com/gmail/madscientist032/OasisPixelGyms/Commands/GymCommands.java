@@ -8,10 +8,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 
-
 public final class GymCommands {
-		    
-	
 	    
 } // end of GymCommands
 /*
