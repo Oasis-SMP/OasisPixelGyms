@@ -1,6 +1,6 @@
 name: OasisPixelGyms
 main: com.gmail.madscientist032.OasisPixelGyms.OasisPixelGyms
-version: Alpha Build 071414 Rev 03
+version: Alpha Build 071414 Rev 04
 description: Oasis Pixelmon Gym Stuff
 author: madscientist032
 commands:
@@ -21,3 +21,6 @@ permissions:
 
     oasispixelgyms.gym.coleader:
         description: Grants Gym Co-leader access!
+    
+    oasispixelgyms.staff:
+        description: Disables join notification for staff leaders!

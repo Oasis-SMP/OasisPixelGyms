@@ -17,7 +17,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.*;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class OasisPixelGymsEvents extends JavaPlugin implements Listener {
+public class OasisPixelGymsEvents implements Listener {
 	
 	public OasisPixelGymsEvents(OasisPixelGyms plugin){
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
@@ -27,16 +27,18 @@ public class OasisPixelGymsEvents extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e){ 
 		Player player = e.getPlayer(); //grabbing player
+		String logString;
 		if //begin check staff (this is hard coded and will be removed in a later version)
 		(	
 			(player.hasPermission("oasispixelgyms.gyms.leader") || (player.hasPermission("oasispixelgyms.gyms.coleader")))
-					&& (player.hasPermission("vanish.standard")) ) 
+					&& (player.hasPermission("oasispixelgyms.staff")) ) 
 			return;
 		else if (
 			(player.hasPermission("oasispixelgyms.gyms.leader") || (player.hasPermission("oasispixelgyms.gyms.coleader")) ) )
 			{
 			//getLogger().info(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!");
 			//Logger.getLogger(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!");
+			logString=(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!").toString();
 			e.setJoinMessage(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!"); // this is sent out to the ENTIRE server.
 		// eventually the plugin will be able to detect which gym the player is a leader/coleader of!
 	}
