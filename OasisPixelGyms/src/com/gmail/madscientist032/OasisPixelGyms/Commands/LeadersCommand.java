@@ -40,7 +40,7 @@ public class LeadersCommand implements CommandExecutor{
 				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
 				} else 
 					if (oplayer.hasPermission("oasispixelgyms.gyms.leader.flying")) {
-						gym = oplayer.getName() + "Flying Gym, levels 20-30"; 
+						gym = " - Flying Gym, levels 20-30"; 
 						sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
 					} else
 						if (oplayer.hasPermission("oasispixelgyms.gyms.leader.bug")) {

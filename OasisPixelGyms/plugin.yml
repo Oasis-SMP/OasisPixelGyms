@@ -27,25 +27,32 @@ permissions:
     
     oasispixelgyms.gyms.leader.grass:
         description: Indicates the grass gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.flying:
         description: Indicates the flying gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.bug:
         description: Indicates the bug gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.psychic:
         description: Indicates the psychic gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.water:
         description: Indicates the water gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.steel:
         description: Indicates the steel gym leaders!
-
+        default: false
+		
     oasispixelgyms.gyms.leader.dragon:
         description: Indicates the dragon gym leaders!
+        default: false
 
     oasispixelgyms.gyms.leader.fire:
         description: Indicates the fire gym leaders!
-
+        default: false
