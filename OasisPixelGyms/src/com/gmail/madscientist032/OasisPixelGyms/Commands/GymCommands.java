@@ -1,19 +1,84 @@
 package com.gmail.madscientist032.OasisPixelGyms.Commands;
 
-
-
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.World;
 import org.bukkit.entity.Player;
+import org.bukkit.Bukkit;
+import com.gmail.madscientist032.OasisPixelGyms.OasisPixelGyms;
 
+public final class GymCommands {}
 
-public final class GymCommands {
-	    
+/*	private OasisPixelGyms plugin;
+	
+	public GymCommands(OasisPixelGyms plugin){
+		this.plugin = plugin;
+	}
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
+	{
+
+		String gym;
+		int gymNumber = 8; // Eight official gyms (not including Shadow Gym which is event-based 
+		sender.sendMessage(ChatColor.GOLD + "[GYM LEADERS ONLINE]" );
+		Player[] onlinePlayers = Bukkit.getServer()
+				.getOnlinePlayers();
+		for (Player oplayer : onlinePlayers) 
+		{
+			if ((oplayer != null)
+					&& (oplayer.hasPermission("oasispixelgyms.gyms.leader")) || (oplayer.hasPermission("oasispixelgyms.gyms.coleader"))) 
+			{
+
+			switch (gymNumber) 
+				{
+				case 1: oplayer.hasPermission("oasispixelgyms.gyms.leader.grass");
+				gym = oplayer.getName() + "Grass Gym, levels 10-20";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 2: oplayer.hasPermission("oasispixelgyms.gyms.leader.flying");
+				gym = oplayer.getName() + "Flying Gym, levels 20-30";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 3: oplayer.hasPermission("oasispixelgyms.gyms.leader.bug");
+				gym = oplayer.getName() + "Bug Gym, levels 30-40";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 4: oplayer.hasPermission("oasispixelgyms.gyms.leader.psychic");
+				gym = oplayer.getName() + "Psychic Gym, levels 40-50";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 5: oplayer.hasPermission("oasispixelgyms.gyms.leader.water");
+				gym = oplayer.getName() + "Water Gym, levels 50-60";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 6: oplayer.hasPermission("oasispixelgyms.gyms.leader.steel");
+				gym = oplayer.getName() + "Steel Gym, levels 60-70";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 7: oplayer.hasPermission("oasispixelgyms.gyms.leader.dragon");
+				gym = oplayer.getName() + "Dragon Gym, levels 70-80";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+	
+				case 8: oplayer.hasPermission("oasispixelgyms.gyms.leader.fire");
+				gym = oplayer.getName() + "Fire Gym, levels 80-90";
+				sender.sendMessage(ChatColor.GOLD + oplayer.getName() + "" + gym);
+				break;
+				} // end switch
+			}	// end if
+		}	//end for
+		return true;
+	}// end gymCommand
 } // end of GymCommands
-
+8?
 /*
  * 
  * package net.charter.orion_pax.OasisChat.Commands;

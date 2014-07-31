@@ -29,6 +29,10 @@ public class OasisPixelGyms extends JavaPlugin implements Listener {
 //		}
 
 		getCommand("leaders").setExecutor(new LeadersCommand(this));
+		//getCommand("gyms").setExecutor(new GymCommands(this));
+		
+		//getCommand("mount").setExecutor(new MountCommand(this));
+		//getCommand("chant").setExecutor(new ChantCommand(this));
 		
 		g = Logger.getLogger("");
 		getLogger().info("OasisPixelGyms has been enabled!");

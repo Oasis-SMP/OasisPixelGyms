@@ -41,6 +41,9 @@ public class OasisPixelGymsEvents implements Listener {
 			logString=(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!").toString();
 			e.setJoinMessage(ChatColor.AQUA + "The gym leader " + player.getName() + " has joined the game!"); // this is sent out to the ENTIRE server.
 		// eventually the plugin will be able to detect which gym the player is a leader/coleader of!
+			
+			// oasispixelgyms.gyms.leader.bug
+			// oasispixelgyms.gyms.leader.<type>
 	}
 		else {
 			return;

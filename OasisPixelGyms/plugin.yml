@@ -1,6 +1,6 @@
 name: OasisPixelGyms
 main: com.gmail.madscientist032.OasisPixelGyms.OasisPixelGyms
-version: Alpha Build 071414 Rev 04
+version: Alpha Build 073114 Rev 01
 description: Oasis Pixelmon Gym Stuff
 author: madscientist032
 commands:
@@ -24,3 +24,28 @@ permissions:
     
     oasispixelgyms.staff:
         description: Disables join notification for staff leaders!
+    
+    oasispixelgyms.gyms.leader.grass:
+        description: Indicates the grass gym leaders!
+
+    oasispixelgyms.gyms.leader.flying:
+        description: Indicates the flying gym leaders!
+
+    oasispixelgyms.gyms.leader.bug:
+        description: Indicates the bug gym leaders!
+
+    oasispixelgyms.gyms.leader.psychic:
+        description: Indicates the psychic gym leaders!
+
+    oasispixelgyms.gyms.leader.water:
+        description: Indicates the water gym leaders!
+
+    oasispixelgyms.gyms.leader.steel:
+        description: Indicates the steel gym leaders!
+
+    oasispixelgyms.gyms.leader.dragon:
+        description: Indicates the dragon gym leaders!
+
+    oasispixelgyms.gyms.leader.fire:
+        description: Indicates the fire gym leaders!
+
